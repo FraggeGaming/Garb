@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Ger body en höjd o bredd*/
+body { 
+    margin: 0px; 
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    min-height: 100%;
+}
+
+/*meny*/
+nav {
+    border: 1px solid black;
+    display: block;
+    padding: 0px;
+    background-color: black;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    font-size: 0;
+    margin-bottom: -1px;
+    margin-top: -1px;
+    margin-right: 8%;
+    margin-left: 8%;
+
+}
+
+nav ul .right{
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li #left{
+    list-style-type: none;
+    float: left;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/*menyknapparna, samt animationen*/
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    -webkit-transition: background-color 0.4s ease-out;
+    cursor: pointer;
+}
+
+.StartsidaText{
+    width: 230px;
+}
+
+/*Dropdown menyn*/
+nav ul li ul {
+    display: block;
+    background-color: #00bfff;
+    position: absolute;
+    display: none;
+    width: 110px;
+    margin: auto;
+    text-align: center;
+}
+
+nav li a:hover {
+    color:#00bfff;
+    text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+    color:black;
+    text-decoration: none;
+}
+
+#active {
+    color:#00bfff;
+}
+
+.backgroundimg {
+    width: 84%;
+    height: 430px;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-image: url(image/benchUpfix.jpg);
+    background-repeat: repeat; /*no-repeat*/
+    background-size:contain;
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    color: #00bfff;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+}
+
+aside {
+    background-image: url(image/benchUpfix.jpg);
+    background-repeat: repeat; /*no-repeat*/
+    background-size:contain;
+    width: 20%;
+    margin-left: 8%;
+    height: 400px;
+    float: left;
+}
+
+article {
+    width: 64%;
+    background-color: whitesmoke;
+    margin-right: 8%;
+    height: 400px;
+    float: right;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 250px;
+    margin-top: -200px;
+    background-color: #00bfff;
+    color: white;
+    text-align: center;
+}
